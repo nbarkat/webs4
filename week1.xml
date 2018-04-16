@@ -1,0 +1,36 @@
+<?xml-stylesheet href="stylesheet.css" version="1.0" encoding="UTF-8"?>
+
+<telefoonboek>
+  <entries>
+    <entry nummer="1">
+      <naam>
+        <voornaam>Joske</voornaam>
+        <familienaam>Vermeuelen</familienaam>
+        <bijnaam></bijnaam>
+      </naam>
+      <geboortedatum>
+        <dag>19</dag>
+        <maand>05</maand>
+        <jaar>1986</jaar>
+      </geboortedatum>
+      <telefoonnummer>016 3219542</telefoonnummer>
+      <email>joske@vermeulen.com</email>
+    </entry>
+    <entry nummer="2">
+      <naam>
+        <voornaam>Davy</voornaam>
+        <familienaam>Bosmans</familienaam>
+        <bijnaam>den Bossie</bijnaam>
+      </naam>
+      <telefoonnummer>016 3219542</telefoonnummer>
+    </entry>
+    <entry nummer="3">
+      <naam>
+        <voornaam>Someone</voornaam>
+        <familienaam>Something</familienaam>
+        <bijnaam>Some</bijnaam>
+      </naam>
+      <telefoonnummer>016 3219542</telefoonnummer>
+    </entry>
+  </entries>
+</telefoonboek>

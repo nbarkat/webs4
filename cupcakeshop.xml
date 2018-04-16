@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shop name="Cupcake shop">
+  <cupcakes>
+    <cupcake name="Cupcake Supreme">
+
+      <expirationdate>
+        <day>15</day>
+        <month>09</month>
+        <year>2019</year>
+      </expirationdate>
+
+      <price>8.00</price>
+
+      <creator name="Bob" surname="Bouwer">
+        <age>42</age>
+        <experience>10</experience>
+      </creator>
+
+      <details>
+        <syruptype>Vanilla</syruptype>
+        <filling>Cream</filling>
+        <topping>
+          <type>Frosting</type>
+          <flavor>Strawberry</flavor>
+        </topping>
+      </details>
+
+    </cupcake>
+
+    <cupcake name="Valentine's Cupcake">
+
+      <expirationdate>
+        <day>23</day>
+        <month>10</month>
+        <year>2019</year>
+      </expirationdate>
+
+      <price>9.50</price>
+
+      <creator name="Maria" surname="Muffins">
+        <age>34</age>
+        <experience>19</experience>
+      </creator>
+
+      <details>
+        <syruptype>Strawberry</syruptype>
+        <filling>Cream</filling>
+        <topping>
+          <type>Frosting</type>
+          <flavor>Vanilla</flavor>
+        </topping>
+      </details>
+
+    </cupcake>
+
+    <cupcake name="Blueberry Bells">
+
+      <expirationdate>
+        <day>23</day>
+        <month>12</month>
+        <year>2020</year>
+      </expirationdate>
+
+      <price>10.00</price>
+
+      <creator name="David" surname="Muffins">
+        <age>39</age>
+        <experience>19</experience>
+      </creator>
+
+      <details>
+        <syruptype>Blueberry</syruptype>
+        <filling>Cream</filling>
+        <topping>
+          <type>Frosting</type>
+          <flavor>Blueberry</flavor>
+        </topping>
+      </details>
+
+    </cupcake>
+  </cupcakes>
+</shop>
