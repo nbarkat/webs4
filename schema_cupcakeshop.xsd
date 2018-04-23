@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="note">
+		<xs:complexType>
+			<xs:sequence>
+
+				<xs:element name="shop">
+					<xs:complexType>
+						<xs:sequence>
+
+							<xs:element name="cupcakes">
+								<xs:complexType>
+									<xs:sequence>
+
+										<xs:element name="cupcake" maxOccurs="unbounded"
+											minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+
+													<xs:element name="expirationdate">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element type="xs:integer" name="day" />
+																<xs:element type="xs:integer" name="month" />
+																<xs:element type="xs:integer" name="year" />
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+
+													<xs:element name="price" type="xs:integer" />
+
+													<xs:element name="creator">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="age" type="xs:integer" />
+																<xs:element name="experience"
+																	type="xs:integer" />
+															</xs:sequence>
+															<xs:attribute name="name" use="optional" />
+															<xs:attribute name="surname" use="optional" />
+														</xs:complexType>
+													</xs:element>
+
+													<xs:element name="details">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="syruptype" type="xs:string" />
+																<xs:element name="filling" type="xs:string" />
+
+																<xs:element name="topping">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="type" type="xs:string" />
+																			<xs:element name="flavor" type="xs:string" />
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+
+												</xs:sequence>
+												<xs:attribute type="xs:string" name="name"
+													use="optional" />
+											</xs:complexType>
+										</xs:element>
+
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="name"
+							use="optional" />
+					</xs:complexType>
+				</xs:element>
+
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	</xs:schema>
+	

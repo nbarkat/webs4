@@ -1,36 +1,47 @@
-<?xml-stylesheet href="stylesheet.css" version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="schema_1.xsd">
 
-<telefoonboek>
-  <entries>
-    <entry nummer="1">
-      <naam>
-        <voornaam>Joske</voornaam>
-        <familienaam>Vermeuelen</familienaam>
-        <bijnaam></bijnaam>
-      </naam>
-      <geboortedatum>
-        <dag>19</dag>
-        <maand>05</maand>
-        <jaar>1986</jaar>
-      </geboortedatum>
-      <telefoonnummer>016 3219542</telefoonnummer>
-      <email>joske@vermeulen.com</email>
-    </entry>
-    <entry nummer="2">
-      <naam>
-        <voornaam>Davy</voornaam>
-        <familienaam>Bosmans</familienaam>
-        <bijnaam>den Bossie</bijnaam>
-      </naam>
-      <telefoonnummer>016 3219542</telefoonnummer>
-    </entry>
-    <entry nummer="3">
-      <naam>
-        <voornaam>Someone</voornaam>
-        <familienaam>Something</familienaam>
-        <bijnaam>Some</bijnaam>
-      </naam>
-      <telefoonnummer>016 3219542</telefoonnummer>
-    </entry>
-  </entries>
-</telefoonboek>
+
+
+	<telefoonboek>
+		<entries>
+			<entry nummer="1">
+				<persoon>
+					<naam>
+						<voornaam>Joske</voornaam>
+						<familienaam>Vermeuelen</familienaam>
+						<bijnaam></bijnaam>
+					</naam>
+					<geboortedatum>
+						<dag>19</dag>
+						<maand>05</maand>
+						<jaar>1986</jaar>
+					</geboortedatum>
+					<telefoonnummer>0163219542</telefoonnummer>
+					<email>joske@vermeulen.com</email>
+				</persoon>
+			</entry>
+			<entry nummer="2">
+				<persoon>
+					<naam>
+						<voornaam>Davy</voornaam>
+						<familienaam>Bosmans</familienaam>
+						<bijnaam>den Bossie</bijnaam>
+					</naam>
+					<telefoonnummer>0163219542</telefoonnummer>
+				</persoon>
+			</entry>
+			<entry nummer="3">
+				<persoon>
+					<naam>
+						<voornaam>Someone</voornaam>
+						<familienaam>Something</familienaam>
+						<bijnaam>Some</bijnaam>
+					</naam>
+					<telefoonnummer>0163219542</telefoonnummer>
+				</persoon>
+			</entry>
+		</entries>
+	</telefoonboek>
+</note>

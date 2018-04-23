@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="note">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="telefoonboek">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="entries">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="entry" maxOccurs="unbounded"
+											minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="persoon">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="naam">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:string"
+																				name="voornaam" />
+																			<xs:element type="xs:string"
+																				name="familienaam" />
+																			<xs:element type="xs:string"
+																				name="bijnaam" minOccurs="0" />
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="geboortedatum"
+																	minOccurs="0">
+																	<xs:complexType>
+																		<xs:sequence>
+
+																			<xs:element name="dag">
+																				<xs:simpleType>
+																					<xs:restriction base="xs:integer">
+																						<xs:minInclusive value="1" />
+																						<xs:maxInclusive value="31" />
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element type="xs:integer" name="maand" />
+																			<xs:element type="xs:integer" name="jaar" />
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element type="xs:integer"
+																	name="telefoonnummer" />
+																<xs:element type="xs:string" name="email"
+																	minOccurs="0" />
+
+															</xs:sequence>
+														
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+	<xs:attribute name="nummer" use="optional">
+
+																<xs:simpleType>
+																	<xs:restriction base="xs:integer">
+																		<xs:minInclusive value="1" />
+																		<xs:maxInclusive value="1000" />
+																	</xs:restriction>
+																</xs:simpleType>
+
+															</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

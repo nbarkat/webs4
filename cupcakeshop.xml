@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<note xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="schema_cupcakeshop.xsd">
+  
 <shop name="Cupcake shop">
   <cupcakes>
     <cupcake name="Cupcake Supreme">
@@ -10,7 +12,7 @@
         <year>2019</year>
       </expirationdate>
 
-      <price>8.00</price>
+      <price>8</price>
 
       <creator name="Bob" surname="Bouwer">
         <age>42</age>
@@ -36,7 +38,7 @@
         <year>2019</year>
       </expirationdate>
 
-      <price>9.50</price>
+      <price>9</price>
 
       <creator name="Maria" surname="Muffins">
         <age>34</age>
@@ -62,7 +64,7 @@
         <year>2020</year>
       </expirationdate>
 
-      <price>10.00</price>
+      <price>10</price>
 
       <creator name="David" surname="Muffins">
         <age>39</age>
@@ -81,3 +83,4 @@
     </cupcake>
   </cupcakes>
 </shop>
+</note>

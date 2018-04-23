@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="note">
+		<xs:complexType>
+			<xs:sequence>
+
+				<xs:element name="display">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="description" />
+
+							<xs:element name="servlet" maxOccurs="unbounded"
+								minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="servlet-name" />
+										<xs:element type="xs:string" name="servlet-class" />
+										<xs:element name="init-param" maxOccurs="unbounded"
+											minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="xs:string" name="param-name" />
+													<xs:element type="xs:string" name="param-value" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+
+							<xs:element name="servlet-mapping"
+								maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="servlet-name" />
+										<xs:element type="xs:string" name="url-pattern" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+
+							<xs:element name="welcome-file-list"
+								maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="welcome-file"
+											maxOccurs="unbounded" minOccurs="0" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+
+							<xs:element name="error-page">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="error-code" />
+										<xs:element type="xs:string" name="location" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+
+							<xs:element name="web-app" maxOccurs="unbounded"
+								minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="session-config"
+											maxOccurs="unbounded" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="xs:string"
+														name="session-timeout" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+
+										<xs:element type="xs:string" name="display-name"
+											maxOccurs="unbounded" minOccurs="0" />
+										<xs:element type="xs:string" name="description"
+											maxOccurs="unbounded" minOccurs="0" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+
+
+
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="name"
+							use="optional" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
